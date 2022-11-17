@@ -17,6 +17,9 @@ body {
     display: none;
 }
 
+.container {
+    position: absolute;
+}
 .container,
 .container2 {
     width: 100%;
@@ -27,7 +30,7 @@ body {
 }
 
 
-.fom-container {
+.fom-container1 {
     background-color: var(--Dark-Blue);
     width: 20%;
     padding: 2rem;
@@ -72,7 +75,7 @@ body {
     color: var(--white);
 }
 
-.buttom-number button:active {
+.buttom-number button:focus {
     background-color: var(--Light-Grey);
 }
 
