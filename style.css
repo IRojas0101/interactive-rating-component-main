@@ -5,7 +5,7 @@
     --Medium-Grey: hsl(216, 12%, 54%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
-    --grey : rgba(80, 80, 100, 0.348);
+    --grey: rgba(80, 80, 100, 0.348);
 }
 
 body {
@@ -13,10 +13,20 @@ body {
     background-color: var(--Very-Dark-Blue);
 }
 
-.container, .container2{
-    display: grid;
-    place-items: center;
+.inactive {
+    display: none;
 }
+
+.container,
+.container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .fom-container {
     background-color: var(--Dark-Blue);
     width: 20%;
@@ -56,13 +66,16 @@ body {
     width: 100%;
 
 }
+
 .buttom-number button:hover {
     background-color: var(--orange);
     color: var(--white);
 }
+
 .buttom-number button:active {
     background-color: var(--Light-Grey);
 }
+
 button {
     cursor: pointer;
 }
@@ -82,7 +95,8 @@ button {
     text-transform: uppercase;
     color: var(--white);
 }
-.buttom-submit button:hover{
+
+.buttom-submit button:hover {
     background-color: var(--white);
     color: var(--orange);
 }
@@ -95,9 +109,10 @@ button {
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
+    
 }
 
-.selected p  {
+.selected p {
     color: var(--orange);
     background-color: var(--grey);
     padding: 5px;
@@ -114,7 +129,3 @@ button {
     color: var(--Medium-Grey);
     font-size: 15px;
 }
-
-
-
-
