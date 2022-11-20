@@ -1,28 +1,44 @@
-const butttomSubmit = document.querySelector('.buttom-submit');
-const container1 = document.querySelector('fom-container1')
-const container2 = document.querySelector('fom-container2')
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+const btn4 = document.getElementById("btn4");
+const btn5 = document.getElementById("btn5");
+const strong = document.getElementById("strong");
 
-const buttomOne = document.querySelector('#btn1');
-const buttomtwo = document.querySelector('#btn2');
-const buttomthree = document.querySelector('#btn3');
-const buttomfour = document.querySelector('#btn4');
-const buttomfive = document.querySelector('#btn5');
+const container1 = document.getElementById("container1");
+const botonsubmit = document.getElementById("botonsubmit");
 
+btn1.addEventListener("click", () => {
+  strong.textContent = btn1.textContent;
+  botonsubmit.addEventListener("click", () => {
+    container1.classList.add("inactive");
+  });
+});
 
+btn2.addEventListener("click", () => {
+  strong.textContent = btn2.textContent;
+  botonsubmit.addEventListener("click", () => {
+    container1.classList.add("inactive");
+  });
+});
 
-butttomSubmit.addEventListener('click', fom1);
+btn3.addEventListener("click", () => {
+  strong.textContent = btn3.textContent;
+  botonsubmit.addEventListener("click", () => {
+    container1.classList.add("inactive");
+  });
+});
 
-container1.classList.toggle('inactive');
+btn4.addEventListener("click", () => {
+  strong.textContent = btn4.textContent;
+  botonsubmit.addEventListener("click", () => {
+    container1.classList.add("inactive");
+  });
+});
 
-
-
-function modifyText(new_text) {
-    const selecNumber = document.querySelector('strong');
-    selecNumber.firstChild.nodeValue = new_text;
-}
-
-buttomOne.addEventListener('click', () => {modifyText(buttomOne.innerHTML);});
-buttomtwo.addEventListener('click', () => {modifyText(buttomtwo.innerHTML);});
-buttomthree.addEventListener('click', () => {modifyText(buttomthree.innerHTML);});
-buttomfour.addEventListener('click', () => {modifyText(buttomfour.innerHTML);});
-buttomfive.addEventListener('click', () => {modifyText(buttomfive.innerHTML);});
+btn5.addEventListener("click", () => {
+  strong.textContent = btn5.textContent;
+  botonsubmit.addEventListener("click", () => {
+    container1.classList.add("inactive");
+  });
+});
